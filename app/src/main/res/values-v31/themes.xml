@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SplashScreenAPISample" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--splash screen background color-->
+        <item name="android:windowSplashScreenBackground">#FFFFFF</item> #004d28
+
+        <!--Use windowSplashScreenAnimatedIcon to add either a drawable or an
+        animated drawable. One of these is required.-->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/animated_icon</item>
+
+        <!--max duration is 1000ms-->
+        <item name="android:windowSplashScreenAnimationDuration">800</item>
+
+        <!--splash screen branding image-->
+        <!--Optional-->
+        <!--<item name="android:windowSplashScreenBrandingImage">@drawable/sl_favourite_24dp</item>-->
+
+        <!--icon background color-->
+        <!--Optional-->
+        <!--<item name="android:windowSplashScreenIconBackgroundColor">#000000</item>-->
+
+        // Set the theme of the Activity that directly follows your splash screen.
+        <item name="postSplashScreenTheme">@style/AppTheme</item>  # Required.
+    </style>
+</resources>
