@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
 import androidx.core.animation.doOnEnd
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
 
 class SplashActivity : AppCompatActivity() {
@@ -18,7 +19,8 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        installSplashScreen()
+        //setContentView(R.layout.activity_splash)
 
         val intent = Intent(this@SplashActivity, MainActivity::class.java)
         startActivity(intent)
